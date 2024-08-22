@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form Example</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <h2>Advanced Form Example</h2>
+    <form action="/submit_form" method="POST" enctype="multipart/form-data">
+        <!-- Fieldset for personal information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Text input for Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="eg.Akash Tharu" required><br><br>
+
+            <!-- Password input for Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="eg.form#akash@123" required><br><br>
+
+            <!-- Email input for Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="gg.akashthru@gmail.com"required><br><br>
+
+            <!-- Date input for Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" placeholder="dd-mm-yyyy" ><br><br>
+
+            <!-- Number input for Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100"><br><br>
+
+            <!-- Color picker for Favorite Color -->
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color" placeholder="eg.red,green,yellow"><br><br>
+
+            <!-- File input for Profile Picture -->
+            <label for="profile_pic">Upload Profile Picture:</label>
+            <input type="file" id="profile_pic" name="profile_pic" accept="image/*"><br><br>
+
+            <!-- URL input for Website -->
+            <label for="website">Personal Website:</label>
+            <input type="url" id="website" name="website" placeholder="eg.akash424.com.np"><br><br>
+
+            <!-- Range input for Satisfaction Level -->
+            <label for="satisfaction">Satisfaction Level:</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="0" max="10"><br><br>
+        </fieldset>
+
+        <!-- Fieldset for Preferences -->
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <!-- Radio buttons for Gender -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <!-- Checkboxes for Hobbies -->
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id="hobby_reading" name="hobbies" value="reading">
+            <label for="hobby_reading">Reading</label><br>
+            <input type="checkbox" id="hobby_travel" name="hobbies" value="travel">
+            <label for="hobby_travel">Traveling</label><br>
+            <input type="checkbox" id="hobby_cooking" name="hobbies" value="cooking">
+            <label for="hobby_cooking">Cooking</label><br><br>
+
+            <!-- Dropdown for Country -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="us">Nepal</option>
+                <option value="uk">India</option>
+                <option value="canada">Japan</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select><br><br>
+
+            <!-- Multi-line text input for Comments -->
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <!-- Fieldset for Confirmation -->
+        <fieldset>
+            <legend>Confirmation</legend>
+
+            <!-- Datalist for Suggestions -->
+            <label for="browser">Preferred Browser:</label>
+            <input list="browsers" id="browser" name="browser">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+            </datalist><br><br>
+
+            <!-- Progress bar -->
+            <label for="progress">Form Completion Progress:</label>
+            <progress id="progress" value="70" max="100"></progress><br><br>
+
+            <!-- Meter for Rating -->
+            <label for="rating">Rate Our Site:</label>
+            <meter id="rating" name="rating" min="0" max="5" low="1" high="4" optimum="5" value="4"></meter><br><br>
+
+            <!-- Hidden input for storing user ID -->
+            <input type="hidden" name="user_id" value="12345">
+        </fieldset>
+
+        <!-- Submit and Reset buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
