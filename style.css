@@ -23,7 +23,7 @@ h2 {
 form {
     max-width: 600px; /* Limit form width */
     margin: 0 auto; /* Center the form on the page */
-    background-color: #fff; /* Set form background to white */
+    background-color: black; /* Set form background to white */
     padding: 20px; /* Add padding inside the form */
     border-radius: 8px; /* Round the corners of the form */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
