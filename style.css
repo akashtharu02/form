@@ -1,10 +1,17 @@
 /* General body styling for form appearance */
 body {
     font-family: Arial, sans-serif; /* Use Arial font for the entire form */
-    background-color: #f7f7f7; /* Set background color of the page */
+    background-color: black; /* Set background to black */
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
 }
+ canvas {
+            display: block; /* Remove any extra space around the canvas */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
 /* Header styling */
 h2 {
