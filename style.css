@@ -1,0 +1,134 @@
+/* General body styling for form appearance */
+body {
+    font-family: Arial, sans-serif; /* Use Arial font for the entire form */
+    background-color: #f7f7f7; /* Set background color of the page */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+h2 {
+    text-align: center; /* Center the header text */
+    color: #333; /* Set header text color to dark gray */
+}
+
+/* Form container styling */
+form {
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form on the page */
+    background-color: #fff; /* Set form background to white */
+    padding: 20px; /* Add padding inside the form */
+    border-radius: 8px; /* Round the corners of the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Fieldset styling */
+fieldset {
+    border: none; /* Remove default fieldset border */
+    margin-bottom: 20px; /* Add space below each fieldset */
+}
+
+/* Legend styling */
+legend {
+    font-size: 1.2em; /* Increase the legend font size */
+    font-weight: bold; /* Make the legend text bold */
+    color: #333; /* Set legend text color to dark gray */
+    padding: 0 10px; /* Add padding around the legend text */
+}
+
+/* Label and input field styling */
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 8px; /* Add space below each label */
+    font-weight: bold; /* Make label text bold */
+    color: #555; /* Set label text color to medium gray */
+}
+
+/* Input, textarea, and select styling */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="color"],
+input[type="url"],
+input[type="range"],
+textarea,
+select {
+    width: 100%; /* Make inputs full-width */
+    padding: 10px; /* Add padding inside inputs */
+    margin-bottom: 15px; /* Add space below each input */
+    border: 1px solid #ccc; /* Set border color to light gray */
+    border-radius: 4px; /* Round the corners of inputs */
+    font-size: 1em; /* Set font size to 1em */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* File input styling */
+input[type="file"] {
+    border: none; /* Remove default border */
+    background-color: #f1f1f1; /* Set background color for file input */
+    padding: 10px; /* Add padding inside the file input */
+    border-radius: 4px; /* Round the corners of the file input */
+    margin-bottom: 15px; /* Add space below the file input */
+}
+
+/* Button styling */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #28a745; /* Set background color for buttons */
+    color: white; /* Set button text color to white */
+    padding: 10px 20px; /* Add padding inside buttons */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Round the corners of buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 1em; /* Set font size to 1em */
+    transition: background-color 0.3s ease; /* Add transition effect on hover */
+    width: 48%; /* Set button width */
+}
+
+/* Button hover effect */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #218838; /* Darken the button background on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    form {
+        padding: 15px; /* Reduce form padding on small screens */
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%; /* Make buttons full-width on small screens */
+        margin-bottom: 10px; /* Add space below buttons on small screens */
+    }
+}
+
+/* Additional styling for dynamic elements */
+progress,
+meter {
+    width: 100%; /* Make progress and meter elements full-width */
+    height: 20px; /* Set height for progress and meter elements */
+    margin-bottom: 15px; /* Add space below progress and meter elements */
+}
+
+/* Textarea styling */
+textarea {
+    resize: vertical; /* Allow vertical resizing of textareas */
+}
+
+/* Header and legend styling */
+h2 {
+    font-size: 1.8em; /* Increase the font size of the header */
+    margin-bottom: 20px; /* Add space below the header */
+    color: #444; /* Set header text color to medium gray */
+}
+
+legend {
+    background-color: #e9ecef; /* Set background color for legends */
+    border-radius: 4px; /* Round the corners of legends */
+    padding: 5px 10px; /* Add padding inside legends */
+}
